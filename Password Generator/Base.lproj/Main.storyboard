@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Password_Generator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="********" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hd-c3-TgH">
+                                <rect key="frame" x="45" y="273.66666666666669" width="300" height="58.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KzD-DI-hTG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCN-pt-MFX">
+                                <rect key="frame" x="32.666666666666657" y="382" width="325" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="EqL-lm-fPM"/>
+                                    <constraint firstAttribute="height" constant="80" id="y88-Cl-mxe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Generate Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generatePasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7sq-wu-iH6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.61568627450980395" green="0.85490196078431369" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Hd-c3-TgH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpq-cO-XkC"/>
+                            <constraint firstItem="DCN-pt-MFX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r8N-c5-ZrU"/>
+                            <constraint firstItem="DCN-pt-MFX" firstAttribute="top" secondItem="6Hd-c3-TgH" secondAttribute="bottom" constant="50" id="vMo-go-jAX"/>
+                            <constraint firstItem="DCN-pt-MFX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y52-0C-Ck0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordLabel" destination="6Hd-c3-TgH" id="atM-fl-4Xi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.38461538461539" y="76.066350710900466"/>
+        </scene>
+    </scenes>
+</document>
